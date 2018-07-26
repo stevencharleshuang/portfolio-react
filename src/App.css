@@ -82,3 +82,7 @@ a:hover, a:active {
   text-align: left;
 }
 
+.App main .Projects li {
+  padding: none;
+  list-style: none;
+}
