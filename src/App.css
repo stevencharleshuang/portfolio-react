@@ -1,3 +1,8 @@
+/* Color Palette
+Accent: #0971B2;
+
+*/
+
 .App {
   text-align: center;
 }
@@ -26,3 +31,39 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+/* My Styles */
+
+a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover, a:active {
+
+}
+
+.App nav ul {
+
+}
+
+.App nav li {
+  margin: 0 5%;
+  display: inline-block;
+  list-style: none;
+  padding: 1.5% 3%;
+  border: 2px #0971B2 solid;
+}
+
+.App nav li a:link, a:visited {
+  color: black;
+}
+
+.App nav li:hover {
+  background-color: #0971B2;
+  color: white;
+}
+
+.App nav li a:hover, a:active {
+  color: white;
+}
+
+
