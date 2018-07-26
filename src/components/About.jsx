@@ -2,6 +2,26 @@ import React from 'react';
 
 export default function () {
   return (
-    <h1>You reached the About page, Dave</h1>
+    <div className="About">
+      <h2>About</h2>
+      <p>
+        I am a Web Developer with passions for
+        music, gaming and all things related to problem-solving.
+      </p>
+      <p>
+        In 2018, I completed the 12-week
+        intensive Web Development Immersive program at General Assembly,
+        New York where we completed four major projects, three of which
+        required full-stack development. It was during this time that I
+        realized my passion for game development and have been unconventionally
+        creating games using JavaScript with jQuery, Crafty.js and HTML 5 Canvas.
+      </p>
+      <p>
+        I graduated from the SUNY Purchase
+        Conservatory of Music in 2009 with a Bachelor of Music in Studio
+        Composition so when I'm not knee-deep in code, I enjoy composing,
+        producing and recording music.
+      </p>
+    </div>
   )
 }

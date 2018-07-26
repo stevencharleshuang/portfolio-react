@@ -72,4 +72,13 @@ a:hover, a:active {
   color: white;
 }
 
+.App main {
+  margin: 0 auto;
+  width: 80%;
+
+}
+
+.App main About {
+  text-align: left;
+}
 

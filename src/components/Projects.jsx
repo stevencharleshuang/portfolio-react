@@ -1,7 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-export default function () {
-  return (
-    <h1>You reached the Projects page, Dave</h1>
-  )
+export default class Projects extends Component {
+  constructor (props) {
+    super(props);
+    this.state = {
+    }
+  }
+  render () {
+    return (
+      <div className="Projects">
+        <h2>Projects</h2>
+
+      </div>
+    )
+  }
 }
