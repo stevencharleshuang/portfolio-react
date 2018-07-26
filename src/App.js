@@ -5,14 +5,17 @@ import Nav from './components/Nav';
 import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import Banner from './components/Banner';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Steve wuz here</h1>
-        <Nav />
+        <header>
+          <Banner />
+          <Nav />
+        </header>
         <Switch>
           <Route exact path="/" />
           <Route exact path="/about" component={About} />
