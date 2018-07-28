@@ -18,7 +18,7 @@ export default function (props) {
             where users can log in, choose a business they would like to review,
             then add their own review to the business.
             <br /><br />
-            <span>Tech</span>: HTML, CSS, JavaScript, Node, Express, React, PostgreSQL
+            <span>Tech</span>: HTML, CSS, JavaScript, Node, Express, React, PostgreSQL, JWT, PG-Promise
           </p>
           <p>
             <a href="https://searchwoo.herokuapp.com" target="_blank" rel="noopener noreferrer">

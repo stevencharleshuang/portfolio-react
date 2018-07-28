@@ -1,11 +1,16 @@
 /* Color Palette
-Accent: #0070E2;
-Header Accent: #0070E2;
-Shadow: #041D4A;
+  Accent: #0070E2;
+  Shadow: #041D4A;
+*/
+/* Google Fonts
+  font-family: 'Tauri', sans-serif;
+  font-family: 'Domine', serif;
+  font-family: 'Source Sans Pro', sans-serif;
 */
 
 .App {
   text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .App-logo {
@@ -55,14 +60,18 @@ a:hover, a:active {
   justify-content: space-between;
   align-items: center;
   font-size: 2vw;
-  margin: 0;
-  -webkit-user-select: none; /* Safari */
--moz-user-select: none; /* Firefox */
--ms-user-select: none; /* IE10+/Edge */
-user-select: none; /* Standard */
+  margin: 1% 1% 0 1%;
+  padding-bottom: 0;
+  /* https://css-tricks.com/almanac/properties/u/user-select/ */
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */
 }
 
 .App header .Banner h1 {
+  font-family: 'Tauri', sans-serif;
+  /*letter-spacing: 3px;*/
   color: white;
 }
 
@@ -90,7 +99,8 @@ user-select: none; /* Standard */
 }
 
 .App nav ul {
-
+  padding: 0;
+  margin-top: 0;
 }
 
 .App nav li {
@@ -102,7 +112,7 @@ user-select: none; /* Standard */
   height: 1.5%;
  /* border: 2px #0070E2 solid;
   border-radius: 5px;*/
-  font-size: 1.3vw;
+  font-size: 1.7vw;
   font-weight: 600;
 }
 
@@ -133,11 +143,11 @@ user-select: none; /* Standard */
 .App main .About img {
   margin: 0 auto;
   text-align: center;
-  border: 1px #0070E2 solid;
+  border: 5px #0070E2 solid;
   border-radius: 50%;
   width: 30%;
   height: 30%;
-  opacity: .6;
+  opacity: 0.9;
   flex-basis: 30%;
 }
 
@@ -146,10 +156,20 @@ user-select: none; /* Standard */
 }
 
 .App main .About .AboutMe p {
+  font-family: 'Domine', serif;
   font-size: 1.5vw;
 }
 
 /***** Projects Styles *****/
+
+::-webkit-scrollbar {
+  display:none;
+}
+
+.App main .Projects h2 {
+  /*color: #0070E2;*/
+  font-size: 1.5vw;
+}
 
 .App main .Projects ul {
   padding: 0;
@@ -172,7 +192,7 @@ user-select: none; /* Standard */
   border-radius: 5px;
 }
 
-.App main .Projects li:hover {
+.App main .Projects img:hover {
   cursor: pointer;
   background-color: #0070E2;
   color: white;
@@ -182,10 +202,14 @@ user-select: none; /* Standard */
 
 .App main .Projects .project {
   margin: 0 auto;
-  max-width: 70%;
+  max-width: 75%;
 }
 
 .App main .Projects .project .show-gallery-btn {
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */
   width: 4%;
   height: 2%;
   padding: 0.5%;
@@ -204,7 +228,8 @@ user-select: none; /* Standard */
 
 .App main .Projects .web-project {
   padding: 1%;
-  background-color: rgba(22, 22, 22, .2);
+  /*background-color: rgba(22, 22, 22, .2);*/
+  border: 2px #0070E2 solid;
   border-radius: 5px;
   display: flex;
   flex-flow: row;
@@ -218,7 +243,7 @@ user-select: none; /* Standard */
 .App main .Projects .web-project .web-project-info {
   padding: 2%;
   font-size: 130%;
-  font-family: serif;
+  font-family: 'Domine', serif;
   font-weight: 100;
   color: black;
   text-align: left
@@ -252,6 +277,7 @@ user-select: none; /* Standard */
 
 .App main .Contact {
   text-align: center;
+  font-size: 1.5vw;
 }
 
 .App main .Contact .contact-form {
@@ -278,7 +304,7 @@ user-select: none; /* Standard */
   background-color: rgba(0, 0, 0, 0);
   color: white;
   padding: 1% 5%;
-  font-size: 90%;
+  font-size: 1.5vw;
   border: 2px #0070E2 solid;
 }
 

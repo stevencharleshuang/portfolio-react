@@ -9,22 +9,22 @@ export default function (props) {
     <div className="ProjectsGallery">
       <ul>
         <li>
-          Steve Fighter
+          <h2>Steve Fighter</h2>
           <br />
           <img src={SteveFighterThmb} data-id="SteveFighter" onClick={props.handleClick} alt="steve fighter"/>
         </li>
         <li>
-          IveBin
+          <h2>IveBin</h2>
           <br />
           <img src={IveBinThmb} data-id="IveBin" onClick={props.handleClick} alt="ivebin"/>
         </li>
         <li>
-          Search Woo
+          <h2>Search Woo</h2>
           <br />
           <img src={SearchWooThmb} data-id="SearchWoo" onClick={props.handleClick} alt="search woo"/>
         </li>
         <li>
-          Tic Tac Toe
+          <h2>Tic Tac Toe</h2>
           <br />
           <img src={TicTacToeThmb} data-id="TicTacToe" onClick={props.handleClick} alt="tic tac toe"/>
         </li>

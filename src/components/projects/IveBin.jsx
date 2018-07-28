@@ -18,7 +18,7 @@ export default function (props) {
             blog about their travel experiences with the ability to
             upload a related image.
             <br /><br />
-            <span>Tech</span>: HTML, CSS, JavaScript, Node, Express, PostgreSQL
+            <span>Tech</span>: HTML, CSS, JavaScript, Node, Express, PostgreSQL, PG-Promise, bCrypt, EJS
           </p>
           <p>
             <a href="https://ivebin.herokuapp.com/public" target="_blank" rel="noopener noreferrer">
