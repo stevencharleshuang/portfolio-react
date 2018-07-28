@@ -21,7 +21,7 @@ export default class Projects extends Component {
   }
 
   handleClick(e) {
-    // console.log('handleClick! e: ', e.target.dataset.id);
+    console.log('handleClick! e: ', e.target);
     switch (e.target.dataset.id) {
       case 'SteveFighter':
         this.setState((prevState) => ({
@@ -59,14 +59,17 @@ export default class Projects extends Component {
   }
 
   render () {
-    // console.log(this.state)
+    console.log(this.state)
     return (
       <div className="Projects">
         <ul>
           <li>
             Steve Fighter
             <br />
-            <img data-id="SteveFighter" onClick={this.handleClick} src={SteveFighterThmb} />
+            {(this.state.SteveFighter === true)
+              ? <SteveFighter handleClick={this.handleClick} test='test props'/>
+              : <img data-id="SteveFighter" onClick={this.handleClick} src={SteveFighterThmb} />}
+
           </li>
           <li>
             IveBin
@@ -85,7 +88,7 @@ export default class Projects extends Component {
           </li>
         </ul>
         <div>
-          {(this.state.SteveFighter === true) ? <SteveFighter /> : null}
+
           {(this.state.IveBin === true) ? <IveBin /> : null}
           {(this.state.SearchWoo === true) ? <SearchWoo /> : null}
           {(this.state.TicTacToe === true) ? <TicTacToe /> : null}

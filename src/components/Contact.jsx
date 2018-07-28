@@ -8,7 +8,7 @@ export default function () {
       </section>
       <p>or</p>
         Leave a note
-      <section class="contact-form">
+      <section className="contact-form">
         <form name="contact" method="POST" netlify>
           <p>
             <label>Name: <br />
