@@ -41,8 +41,22 @@ a:hover, a:active {
 
 }
 
+.App header .Banner {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2vw;
+}
+
+
 .App header .Banner h2 {
   color: #0971B2;
+}
+
+.App header .Banner img {
+  width: 40px;
+  height: auto;
 }
 
 .App nav ul {
@@ -54,10 +68,12 @@ a:hover, a:active {
   display: inline-block;
   list-style: none;
   padding: 1.5% 3%;
-  width: 5%;
+  width: 10%;
   height: 1.5%;
   border: 2px #0971B2 solid;
   border-radius: 5px;
+  font-size: 1.3vw;
+  font-weight: 600;
 }
 
 .App nav li a:link, a:visited {
@@ -90,7 +106,6 @@ a:hover, a:active {
   padding: 1% 1%;
   width: 15%;
   height: 10%;
-  border: 2px #0971B2 solid;
   border-radius: 5px;
 }
 
