@@ -1,10 +1,16 @@
 /* Color Palette
-Accent: #0971B2;
-
+  Accent: #0070E2;
+  Shadow: #041D4A;
+*/
+/* Google Fonts
+  font-family: 'Tauri', sans-serif;
+  font-family: 'Domine', serif;
+  font-family: 'Source Sans Pro', sans-serif;
 */
 
 .App {
   text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .App-logo {
@@ -35,14 +41,14 @@ Accent: #0971B2;
 
 a:link, a:visited {
   text-decoration: none;
-  color: #0971B2;
+  color: #0070E2;
 }
 
 a:hover, a:active {
   color: #0981D2;;
 }
 
-/***** About *****/
+/***** Header Styles *****/
 
 .App header {
   background-color: #222;
@@ -54,15 +60,23 @@ a:hover, a:active {
   justify-content: space-between;
   align-items: center;
   font-size: 2vw;
-  margin: 0;
+  margin: 1% 1% 0 1%;
+  padding-bottom: 0;
+  /* https://css-tricks.com/almanac/properties/u/user-select/ */
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */
 }
 
 .App header .Banner h1 {
+  font-family: 'Tauri', sans-serif;
+  /*letter-spacing: 3px;*/
   color: white;
 }
 
 .App header .Banner h2 {
-  color: #0971B2;
+  color: #0070E2;
 }
 
 .App header .Banner .MyStuff {
@@ -78,14 +92,15 @@ a:hover, a:active {
   height: auto;
 }
 
-/***** Nav *****/
+/***** Nav Styles *****/
 
 .App nav {
   /*padding-bottom: .1%;*/
 }
 
 .App nav ul {
-
+  padding: 0;
+  margin-top: 0;
 }
 
 .App nav li {
@@ -95,9 +110,9 @@ a:hover, a:active {
   padding: 1.5% 1%;
   width: 10%;
   height: 1.5%;
- /* border: 2px #0971B2 solid;
+ /* border: 2px #0070E2 solid;
   border-radius: 5px;*/
-  font-size: 1.3vw;
+  font-size: 1.7vw;
   font-weight: 600;
 }
 
@@ -106,7 +121,7 @@ a:hover, a:active {
 }
 
 .App nav li:hover {
-  background-color: #0971B2;
+  background-color: #0070E2;
   border-radius: 5px 5px 0 0;
   color: white;
 }
@@ -117,7 +132,7 @@ a:hover, a:active {
 
 }
 
-/***** About *****/
+/***** About Styles *****/
 
 .App main .About {
   text-align: left;
@@ -128,11 +143,11 @@ a:hover, a:active {
 .App main .About img {
   margin: 0 auto;
   text-align: center;
-  border: 1px #0971B2 solid;
+  border: 5px #0070E2 solid;
   border-radius: 50%;
   width: 30%;
   height: 30%;
-  opacity: .6;
+  opacity: 0.9;
   flex-basis: 30%;
 }
 
@@ -141,10 +156,20 @@ a:hover, a:active {
 }
 
 .App main .About .AboutMe p {
+  font-family: 'Domine', serif;
   font-size: 1.5vw;
 }
 
-/***** Projects *****/
+/***** Projects Styles *****/
+
+::-webkit-scrollbar {
+  display:none;
+}
+
+.App main .Projects h2 {
+  /*color: #0070E2;*/
+  font-size: 1.5vw;
+}
 
 .App main .Projects ul {
   padding: 0;
@@ -157,7 +182,7 @@ a:hover, a:active {
   padding: 1%;
   width: 40%;
   height: 40%;
-  border: 2px #0971B2 solid;
+  border: 2px #0070E2 solid;
   border-radius: 5px;
 }
 
@@ -167,39 +192,92 @@ a:hover, a:active {
   border-radius: 5px;
 }
 
-.App main .Projects li:hover {
+.App main .Projects img:hover {
   cursor: pointer;
-  background-color: #0971B2;
+  background-color: #0070E2;
   color: white;
 }
 
-/*** Sub Projects ***/
+/*** Individual Project Styles ***/
 
-.App main .Projects .SteveFighter {
-  /*position: fixed;*/
+.App main .Projects .project {
+  margin: 0 auto;
+  max-width: 75%;
 }
 
-.App main .Projects .ShowGalleryBtn {
-  width: 3%;
-  height: 3%;
+.App main .Projects .project .show-gallery-btn {
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */
+  width: 4%;
+  height: 2%;
   padding: 0.5%;
-  color: #0971B2;
+  color: #0070E2;
   font-size: 1.8vw;
   font-weight: 600;
-  border: 2px #0971B2 solid;
+  border: 2px #0070E2 solid;
   border-radius: 5px;
 }
 
-.App main .Projects .ShowGalleryBtn:hover {
-  background-color: #0971B2;
+.App main .Projects .project .show-gallery-btn:hover {
+  background-color: #0070E2;
   color: white;
   cursor: pointer;
 }
 
-/***** Contact *****/
+.App main .Projects .web-project {
+  padding: 1%;
+  /*background-color: rgba(22, 22, 22, .2);*/
+  border: 2px #0070E2 solid;
+  border-radius: 5px;
+  display: flex;
+  flex-flow: row;
+}
+
+.App main .Projects .project-image {
+  width: 100%;
+  height: auto;
+}
+
+.App main .Projects .web-project .web-project-info {
+  padding: 2%;
+  font-size: 130%;
+  font-family: 'Domine', serif;
+  font-weight: 100;
+  color: black;
+  text-align: left
+}
+
+.App main .Projects .web-project .web-project-info span {
+  color: #0070E2;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+.App main .Projects .web-project .web-project-info .icon {
+  width: 10%;
+  height: auto;
+  margin: 0 5% 0 0;
+  height: auto;
+  text-align: center;
+  text-align: center;
+}
+
+.App main .Projects .web-project .web-project-info .icon:hover {
+  width: 10%;
+  height: auto;
+  height: auto;
+  text-align: center;
+  background-color: #041D4A;
+  border-radius: 50%;
+}
+
+/***** Contact Styles *****/
 
 .App main .Contact {
   text-align: center;
+  font-size: 1.5vw;
 }
 
 .App main .Contact .contact-form {
@@ -226,11 +304,11 @@ a:hover, a:active {
   background-color: rgba(0, 0, 0, 0);
   color: white;
   padding: 1% 5%;
-  font-size: 90%;
-  border: 2px #0971B2 solid;
+  font-size: 1.5vw;
+  border: 2px #0070E2 solid;
 }
 
 .App main .Contact button:hover {
-  background-color: #0971B2;
+  background-color: #0070E2;
   color: white;
 }

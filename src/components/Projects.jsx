@@ -57,11 +57,20 @@ export default class Projects extends Component {
           TicTacToe: !prevState.TicTacToe,
         }));
         break;
+      default:
+         this.setState((prevState) => ({
+          gallery: prevState.gallery,
+          SteveFighter: false,
+          IveBin: false,
+          SearchWoo: false,
+          TicTacToe: false,
+        }));
+        break;
     }
   }
 
   render () {
-    console.log(this.state)
+    // console.log(this.state);
     return (
       <div className="Projects">
         {(this.state.gallery === true)
