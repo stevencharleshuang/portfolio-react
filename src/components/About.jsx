@@ -4,7 +4,7 @@ import MyPic from '../images/mypic.png';
 export default function () {
   return (
     <div className="About">
-      <img src={MyPic} />
+      <img src={MyPic} alt="profile pic"/>
       <div className="AboutMe">
         <p>
           I am a Web Developer with passions for

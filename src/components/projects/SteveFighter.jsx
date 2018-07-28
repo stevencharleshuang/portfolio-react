@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import Git from '../../images/github.png';
 import Web from '../../images/web.png';
 import SteveFighter from '../../images/steve-fighter.png';
@@ -9,7 +8,7 @@ export default function (props) {
     <div className="project SteveFighter">
       <div className="show-gallery-btn" data-id="SteveFighter" onClick={props.handleClick}> x </div>
       <div className="web-project">
-        <a href="http://eager-blackwell-7636a3.bitballoon.com/" target="_blank">
+        <a href="http://eager-blackwell-7636a3.bitballoon.com/" target="_blank" rel="noopener noreferrer">
           <img className="project-image" src={SteveFighter} alt="steve-fighter" />
         </a>
         <div className="web-project-info">
@@ -21,10 +20,10 @@ export default function (props) {
             <span>Tech</span>:  HTML, CSS, JavaScript, jQuery
           </p>
           <p>
-            <a href="http://eager-blackwell-7636a3.bitballoon.com/" target="_blank">
+            <a href="http://eager-blackwell-7636a3.bitballoon.com/" target="_blank" rel="noopener noreferrer">
               <img className="icon" src={Web} alt="web" />
             </a>
-            <a href="https://github.com/stevencharleshuang/steve-fighter-ii" target="_blank">
+            <a href="https://github.com/stevencharleshuang/steve-fighter-ii" target="_blank" rel="noopener noreferrer">
               <img className="icon" src={Git} alt="git" />
             </a>
           </p>

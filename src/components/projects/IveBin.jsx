@@ -8,7 +8,7 @@ export default function (props) {
     <div className="project IveBin">
       <div className="show-gallery-btn" data-id="IveBin" onClick={props.handleClick}> x </div>
       <div className="web-project">
-        <a href="https://ivebin.herokuapp.com/public" target="_blank">
+        <a href="https://ivebin.herokuapp.com/public" target="_blank" rel="noopener noreferrer">
           <img className="project-image" src={IveBin} alt="ivebin" />
         </a>
         <div className="web-project-info">
@@ -21,10 +21,10 @@ export default function (props) {
             <span>Tech</span>: HTML, CSS, JavaScript, Node, Express, PostgreSQL
           </p>
           <p>
-            <a href="https://ivebin.herokuapp.com/public" target="_blank">
+            <a href="https://ivebin.herokuapp.com/public" target="_blank" rel="noopener noreferrer">
               <img className="icon" src={Web} alt="web" />
             </a>
-            <a href="https://github.com/stevencharleshuang/ivebin" target="_blank">
+            <a href="https://github.com/stevencharleshuang/ivebin" target="_blank" rel="noopener noreferrer">
               <img className="icon" src={Git} alt="git" />
             </a>
           </p>

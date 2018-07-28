@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import SteveFighterThmb from '../images/steve-fighter.png';
 import IveBinThmb from '../images/ivebin.png';
 import SearchWooThmb from '../images/searchwoo.png';
@@ -12,22 +11,22 @@ export default function (props) {
         <li>
           Steve Fighter
           <br />
-          <img src={SteveFighterThmb} data-id="SteveFighter" onClick={props.handleClick} />
+          <img src={SteveFighterThmb} data-id="SteveFighter" onClick={props.handleClick} alt="steve fighter"/>
         </li>
         <li>
           IveBin
           <br />
-          <img src={IveBinThmb} data-id="IveBin" onClick={props.handleClick} />
+          <img src={IveBinThmb} data-id="IveBin" onClick={props.handleClick} alt="ivebin"/>
         </li>
         <li>
           Search Woo
           <br />
-          <img src={SearchWooThmb} data-id="SearchWoo" onClick={props.handleClick} />
+          <img src={SearchWooThmb} data-id="SearchWoo" onClick={props.handleClick} alt="search woo"/>
         </li>
         <li>
           Tic Tac Toe
           <br />
-          <img src={TicTacToeThmb} data-id="TicTacToe" onClick={props.handleClick} />
+          <img src={TicTacToeThmb} data-id="TicTacToe" onClick={props.handleClick} alt="tic tac toe"/>
         </li>
       </ul>
     </div>

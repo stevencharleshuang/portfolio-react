@@ -8,7 +8,7 @@ export default function (props) {
     <div className="project searchwoo">
       <div className="show-gallery-btn" data-id="SearchWoo" onClick={props.handleClick}> x </div>
       <div className="web-project">
-        <a href="https://searchwoo.herokuapp.com/public" target="_blank">
+        <a href="https://searchwoo.herokuapp.com/public" target="_blank" rel="noopener noreferrer">
           <img className="project-image" src={SearchWoo} alt="searchwoo" />
         </a>
         <div className="web-project-info">
@@ -21,10 +21,10 @@ export default function (props) {
             <span>Tech</span>: HTML, CSS, JavaScript, Node, Express, React, PostgreSQL
           </p>
           <p>
-            <a href="https://searchwoo.herokuapp.com">
+            <a href="https://searchwoo.herokuapp.com" target="_blank" rel="noopener noreferrer">
               <img className="icon" src={Web} alt="web" />
             </a>
-            <a href="https://git.generalassemb.ly/team-awesome/project-3/tree/dev">
+            <a href="https://git.generalassemb.ly/team-awesome/project-3/tree/dev" target="_blank" rel="noopener noreferrer">
               <img className="icon" src={Git} alt="git" />
             </a>
           </p>

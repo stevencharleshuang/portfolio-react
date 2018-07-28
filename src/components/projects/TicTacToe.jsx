@@ -8,7 +8,7 @@ export default function (props) {
     <div className="project tictactoe">
       <div className="show-gallery-btn" data-id="TicTacToe" onClick={props.handleClick}> x </div>
       <div className="web-project">
-        <a href="https://tictactoe.herokuapp.com/public" target="_blank">
+        <a href="https://tictactoe.herokuapp.com/public" target="_blank" rel="noopener noreferrer">
           <img className="project-image" src={TicTacToe} alt="tictactoe" />
         </a>
         <div className="web-project-info">
@@ -20,10 +20,10 @@ export default function (props) {
             <span>Tech</span>: HTML, CSS, JavaScript, jQuery
           </p>
           <p>
-            <a href="https://github.com/stevencharleshuang/jquery-tic-tac-toe">
+            <a href="https://github.com/stevencharleshuang/jquery-tic-tac-toe" target="_blank" rel="noopener noreferrer">
               <img className="icon" src={Web} alt="web" />
             </a>
-            <a href="https://git.generalassemb.ly/stevencharleshuang/jquery-tic-tac-toe-hw">
+            <a href="https://git.generalassemb.ly/stevencharleshuang/jquery-tic-tac-toe-hw" target="_blank" rel="noopener noreferrer">
               <img className="icon" src={Git} alt="git" />
             </a>
           </p>
