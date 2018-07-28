@@ -87,7 +87,7 @@ a:hover, a:active {
   margin: 0 5%;
   display: inline-block;
   list-style: none;
-  padding: 1.5% 3%;
+  padding: 1.5% 1%;
   width: 10%;
   height: 1.5%;
  /* border: 2px #0971B2 solid;
@@ -116,13 +116,23 @@ a:hover, a:active {
   text-align: left;
 }
 
+.App main .Projects ul {
+  padding: 0;
+}
+
 .App main .Projects li {
-  margin: 10% 2%;
+  margin: 0 2%;
   display: inline-block;
   list-style: none;
-  padding: 1% 1%;
-  width: 15%;
-  height: 10%;
+  padding: 1%;
+  width: 40%;
+  height: 40%;
+  border-radius: 5px;
+}
+
+.App main .Projects li img {
+  width: 100%;
+  height: auto;
   border-radius: 5px;
 }
 

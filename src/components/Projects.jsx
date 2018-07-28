@@ -3,10 +3,10 @@ import SteveFighter from './projects/SteveFighter';
 import IveBin from './projects/IveBin';
 import SearchWoo from './projects/SearchWoo';
 import TicTacToe from './projects/TicTacToe';
-import SteveFighterThmb from '../images/steve-fighter-thmb.png';
-import IveBinThmb from '../images/ivebin-thmb.png';
-import SearchWooThmb from '../images/searchwoo-thmb.png';
-import TicTacToeThmb from '../images/tictactoe-thmb.png';
+import SteveFighterThmb from '../images/steve-fighter.png';
+import IveBinThmb from '../images/ivebin.png';
+import SearchWooThmb from '../images/searchwoo.png';
+import TicTacToeThmb from '../images/tictactoe.png';
 
 export default class Projects extends Component {
   constructor (props) {
@@ -63,25 +63,25 @@ export default class Projects extends Component {
     return (
       <div className="Projects">
         <ul>
-          <li data-id="SteveFighter" onClick={this.handleClick}>
+          <li>
             Steve Fighter
             <br />
             <img data-id="SteveFighter" onClick={this.handleClick} src={SteveFighterThmb} />
           </li>
-          <li data-id="IveBin" onClick={this.handleClick}>
-            Ive Bin
+          <li>
+            IveBin
             <br />
-            <img src={IveBinThmb} />
+            <img src={IveBinThmb} data-id="IveBin" onClick={this.handleClick} />
           </li>
-          <li data-id="SearchWoo" onClick={this.handleClick}>
+          <li>
             Search Woo
             <br />
-            <img src={SearchWooThmb} />
+            <img src={SearchWooThmb} data-id="SearchWoo" onClick={this.handleClick} />
           </li>
-          <li data-id="TicTacToe" onClick={this.handleClick}>
+          <li>
             Tic Tac Toe
             <br />
-            <img src={TicTacToeThmb} />
+            <img src={TicTacToeThmb} data-id="TicTacToe" onClick={this.handleClick} />
           </li>
         </ul>
         <div>
