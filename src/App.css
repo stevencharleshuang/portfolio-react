@@ -112,21 +112,43 @@ a:hover, a:active {
 
 }
 
-.App main About {
+/***** About *****/
+
+.App main .About {
   text-align: left;
+  display: flex;
+  flex-direction: row;
 }
+
+.App main .About img {
+  margin: 0 auto;
+  text-align: center;
+  border: 1px #0971B2 solid;
+  border-radius: 50%;
+  width: 30%;
+  height: 30%;
+  opacity: .6;
+  flex-basis: 30%;
+}
+
+.App main .About .AboutMe {
+  flex-basis: 50%;
+}
+
+/***** Projects *****/
 
 .App main .Projects ul {
   padding: 0;
 }
 
 .App main .Projects li {
-  margin: 0 2%;
+  margin: .5%;
   display: inline-block;
   list-style: none;
   padding: 1%;
   width: 40%;
   height: 40%;
+  border: 2px #0971B2 solid;
   border-radius: 5px;
 }
 
@@ -138,6 +160,45 @@ a:hover, a:active {
 
 .App main .Projects li:hover {
   cursor: pointer;
+  background-color: #0971B2;
+  color: white;
+}
+
+/***** Contact *****/
+
+.App main .Contact {
+  text-align: center;
+}
+
+.App main .Contact .contact-form {
+  margin: 3%;
+  padding: 3%;
+  background-color: rgba(22, 22, 22, .9);
+  color: white;
+  border-radius: 5px;
+}
+
+.App main .Contact input {
+  width: 30%;
+  height: auto;
+}
+
+.App main .Contact textarea {
+  width: 30%;
+  height: auto;
+}
+
+.App main .Contact button {
+  /*width: 10%;
+  height: 50%;*/
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  padding: 1% 5%;
+  font-size: 90%;
+  border: 2px #0971B2 solid;
+}
+
+.App main .Contact button:hover {
   background-color: #0971B2;
   color: white;
 }
