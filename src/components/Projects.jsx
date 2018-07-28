@@ -32,6 +32,7 @@ export default class Projects extends Component {
         break;
       case 'IveBin':
         this.setState((prevState) => ({
+          gallery: !prevState.gallery,
           SteveFighter: false,
           IveBin: !prevState.IveBin,
           SearchWoo: false,
@@ -40,6 +41,7 @@ export default class Projects extends Component {
         break;
       case 'SearchWoo':
         this.setState((prevState) => ({
+          gallery: !prevState.gallery,
           SteveFighter: false,
           IveBin: false,
           SearchWoo: !prevState.SearchWoo,
@@ -48,6 +50,7 @@ export default class Projects extends Component {
         break;
       case 'TicTacToe':
         this.setState((prevState) => ({
+          gallery: !prevState.gallery,
           SteveFighter: false,
           IveBin: false,
           SearchWoo: false,
@@ -66,9 +69,9 @@ export default class Projects extends Component {
           :
             <div className="ProjectDisplay">
               {(this.state.SteveFighter === true) ? <SteveFighter test='Steve Fighter' handleClick={this.handleClick} /> : null}
-              {(this.state.IveBin === true) ? <IveBin /> : null}
-              {(this.state.SearchWoo === true) ? <SearchWoo /> : null}
-              {(this.state.TicTacToe === true) ? <TicTacToe /> : null}
+              {(this.state.IveBin === true) ? <IveBin handleClick={this.handleClick} /> : null}
+              {(this.state.SearchWoo === true) ? <SearchWoo handleClick={this.handleClick} /> : null}
+              {(this.state.TicTacToe === true) ? <TicTacToe handleClick={this.handleClick} /> : null}
             </div>}
       </div>
     )
