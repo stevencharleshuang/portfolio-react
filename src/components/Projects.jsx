@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import {Route, Switch, Redirect, Link} from 'react-router-dom';
+import SteveFighter from './projects/SteveFighter';
+import IveBin from './projects/IveBin';
+import SearchWoo from './projects/SearchWoo';
+import TicTacToe from './projects/TicTacToe';
 
 export default class Projects extends Component {
   constructor (props) {
@@ -19,25 +22,42 @@ export default class Projects extends Component {
       case 'SteveFighter':
         this.setState((prevState) => ({
           SteveFighter: !prevState.SteveFighter,
+          IveBin: false,
+          SearchWoo: false,
+          TicTacToe: false,
         }));
         break;
       case 'IveBin':
-        console.log('IveBin');
+        this.setState((prevState) => ({
+          SteveFighter: false,
+          IveBin: !prevState.IveBin,
+          SearchWoo: false,
+          TicTacToe: false,
+        }));
         break;
       case 'SearchWoo':
-        console.log('SearchWoo');
+        this.setState((prevState) => ({
+          SteveFighter: false,
+          IveBin: false,
+          SearchWoo: !prevState.SearchWoo,
+          TicTacToe: false,
+        }));
         break;
       case 'TicTacToe':
-        console.log('TicTacToe');
+        this.setState((prevState) => ({
+          SteveFighter: false,
+          IveBin: false,
+          SearchWoo: false,
+          TicTacToe: !prevState.TicTacToe,
+        }));
         break;
     }
   }
 
   render () {
-    console.log(this.state)
+    // console.log(this.state)
     return (
       <div className="Projects">
-        <h2>Projects</h2>
         <ul>
           <li data-id="SteveFighter" onClick={this.handleClick}>Steve Fighter</li>
           <li data-id="IveBin" onClick={this.handleClick}>Ive Bin</li>
@@ -45,7 +65,10 @@ export default class Projects extends Component {
           <li data-id="TicTacToe" onClick={this.handleClick}>Tic Tac Toe</li>
         </ul>
         <div>
-
+          {(this.state.SteveFighter === true) ? <SteveFighter /> : null}
+          {(this.state.IveBin === true) ? <IveBin /> : null}
+          {(this.state.SearchWoo === true) ? <SearchWoo /> : null}
+          {(this.state.TicTacToe === true) ? <TicTacToe /> : null}
         </div>
       </div>
     )
