@@ -3,6 +3,10 @@ import SteveFighter from './projects/SteveFighter';
 import IveBin from './projects/IveBin';
 import SearchWoo from './projects/SearchWoo';
 import TicTacToe from './projects/TicTacToe';
+import SteveFighterThmb from '../images/steve-fighter-thmb.png';
+import IveBinThmb from '../images/ivebin-thmb.png';
+import SearchWooThmb from '../images/searchwoo-thmb.png';
+import TicTacToeThmb from '../images/tictactoe-thmb.png';
 
 export default class Projects extends Component {
   constructor (props) {
@@ -59,10 +63,26 @@ export default class Projects extends Component {
     return (
       <div className="Projects">
         <ul>
-          <li data-id="SteveFighter" onClick={this.handleClick}>Steve Fighter</li>
-          <li data-id="IveBin" onClick={this.handleClick}>Ive Bin</li>
-          <li data-id="SearchWoo" onClick={this.handleClick}>Search Woo</li>
-          <li data-id="TicTacToe" onClick={this.handleClick}>Tic Tac Toe</li>
+          <li data-id="SteveFighter" onClick={this.handleClick}>
+            Steve Fighter
+            <br />
+            <img data-id="SteveFighter" onClick={this.handleClick} src={SteveFighterThmb} />
+          </li>
+          <li data-id="IveBin" onClick={this.handleClick}>
+            Ive Bin
+            <br />
+            <img src={IveBinThmb} />
+          </li>
+          <li data-id="SearchWoo" onClick={this.handleClick}>
+            Search Woo
+            <br />
+            <img src={SearchWooThmb} />
+          </li>
+          <li data-id="TicTacToe" onClick={this.handleClick}>
+            Tic Tac Toe
+            <br />
+            <img src={TicTacToeThmb} />
+          </li>
         </ul>
         <div>
           {(this.state.SteveFighter === true) ? <SteveFighter /> : null}

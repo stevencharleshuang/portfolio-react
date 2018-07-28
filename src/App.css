@@ -41,14 +41,22 @@ a:hover, a:active {
 
 }
 
+.App header {
+  background-color: #222;
+}
+
 .App header .Banner {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
   font-size: 2vw;
+  margin: 0;
 }
 
+.App header .Banner h1 {
+  color: white;
+}
 
 .App header .Banner h2 {
   color: #0971B2;
@@ -60,10 +68,15 @@ a:hover, a:active {
   padding: 0;
 }
 
-.App header .Banner img {
-  margin: 0;
+.App header .Banner .MyStuff img {
+  margin: 0 5%;
+  /*padding: ;*/
   width: 10%;
   height: auto;
+}
+
+.App nav {
+  /*padding-bottom: .1%;*/
 }
 
 .App nav ul {
@@ -77,22 +90,19 @@ a:hover, a:active {
   padding: 1.5% 3%;
   width: 10%;
   height: 1.5%;
-  border: 2px #0971B2 solid;
-  border-radius: 5px;
+ /* border: 2px #0971B2 solid;
+  border-radius: 5px;*/
   font-size: 1.3vw;
   font-weight: 600;
 }
 
 .App nav li a:link, a:visited {
-  color: black;
+  color: white;
 }
 
 .App nav li:hover {
   background-color: #0971B2;
-  color: white;
-}
-
-.App nav li a:hover, a:active {
+  border-radius: 5px 5px 0 0;
   color: white;
 }
 
