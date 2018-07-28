@@ -66,10 +66,7 @@ export default class Projects extends Component {
           <li>
             Steve Fighter
             <br />
-            {(this.state.SteveFighter === true)
-              ? <SteveFighter handleClick={this.handleClick} test='test props'/>
-              : <img data-id="SteveFighter" onClick={this.handleClick} src={SteveFighterThmb} />}
-
+            <img src={SteveFighterThmb} data-id="SteveFighter" onClick={this.handleClick} />
           </li>
           <li>
             IveBin
@@ -88,7 +85,7 @@ export default class Projects extends Component {
           </li>
         </ul>
         <div>
-
+          {(this.state.SteveFighter === true) ? <SteveFighter test='Steve Fighter' /> : null}
           {(this.state.IveBin === true) ? <IveBin /> : null}
           {(this.state.SearchWoo === true) ? <SearchWoo /> : null}
           {(this.state.TicTacToe === true) ? <TicTacToe /> : null}
