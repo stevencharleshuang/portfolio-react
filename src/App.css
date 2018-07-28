@@ -43,8 +43,8 @@ a:hover, a:active {
 
 .App header .Banner {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
+  flex-flow: row nowrap;
+  justify-content: space-between;
   align-items: center;
   font-size: 2vw;
 }
@@ -54,8 +54,15 @@ a:hover, a:active {
   color: #0971B2;
 }
 
+.App header .Banner .MyStuff {
+  width: 30%;
+  height: auto;
+  padding: 0;
+}
+
 .App header .Banner img {
-  width: 40px;
+  margin: 0;
+  width: 10%;
   height: auto;
 }
 
