@@ -132,6 +132,12 @@ a:hover, a:active {
 
 }
 
+/***** Home Styles *****/
+
+.App main .home canvas {
+  border: 1px red solid;
+}
+
 /***** About Styles *****/
 
 .App main .About {
