@@ -38,7 +38,7 @@ export default class ContactForm extends React.Component {
     render() {
       const { name, email, message } = this.state;
       return (
-        <div className="Contact">
+        <div className="Contact fade-in one">
           <section>
           E-mail me at <a href="mailto:steven.charles.huang@gmail.com">steven.charles.huang@gmail.com</a>
           </section>
