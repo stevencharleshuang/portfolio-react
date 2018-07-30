@@ -1,7 +1,11 @@
 import React from 'react';
+import Canvas from './Canvas';
 
 export default function () {
   return (
-    <h1>You reached the Home page, Dave</h1>
+    <div className="home">
+      <h2>I'm Steve. Who would you be?</h2>
+      <Canvas />
+    </div>
   )
 }
