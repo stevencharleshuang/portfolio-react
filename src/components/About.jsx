@@ -3,9 +3,9 @@ import MyPic from '../images/mypic.png';
 
 export default function () {
   return (
-    <div className="About">
+    <div className="About fade-in four">
       <img src={MyPic} alt="profile pic"/>
-      <div className="AboutMe">
+      <div className="AboutMe fade-in four">
         <p>
           I am a Web Developer with passions for
           music, gaming and all things related to problem-solving.

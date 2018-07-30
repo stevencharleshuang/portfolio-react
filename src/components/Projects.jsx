@@ -76,7 +76,7 @@ export default class Projects extends Component {
         {(this.state.gallery === true)
           ? <ProjectsGallery handleClick={this.handleClick} />
           :
-            <div className="ProjectDisplay">
+            <div className="ProjectDisplay fade-in one">
               {(this.state.SteveFighter === true) ? <SteveFighter test='Steve Fighter' handleClick={this.handleClick} /> : null}
               {(this.state.IveBin === true) ? <IveBin handleClick={this.handleClick} /> : null}
               {(this.state.SearchWoo === true) ? <SearchWoo handleClick={this.handleClick} /> : null}

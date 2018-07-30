@@ -8,22 +8,22 @@ export default function (props) {
   return (
     <div className="ProjectsGallery">
       <ul>
-        <li>
+        <li className="fade-in one">
           <h2>Steve Fighter</h2>
           <br />
           <img src={SteveFighterThmb} data-id="SteveFighter" onClick={props.handleClick} alt="steve fighter"/>
         </li>
-        <li>
+        <li className="fade-in two">
           <h2>IveBin</h2>
           <br />
           <img src={IveBinThmb} data-id="IveBin" onClick={props.handleClick} alt="ivebin"/>
         </li>
-        <li>
+        <li className="fade-in three">
           <h2>Search Woo</h2>
           <br />
           <img src={SearchWooThmb} data-id="SearchWoo" onClick={props.handleClick} alt="search woo"/>
         </li>
-        <li>
+        <li className="fade-in four">
           <h2>Tic Tac Toe</h2>
           <br />
           <img src={TicTacToeThmb} data-id="TicTacToe" onClick={props.handleClick} alt="tic tac toe"/>
