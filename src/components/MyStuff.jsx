@@ -15,7 +15,7 @@ export default class MyStuff extends Component {
   }
 
   handleMouseEnter(e) {
-    console.log('detected mouse enter', e.target.dataset.id)
+    // console.log('detected mouse enter', e.target.dataset.id)
     let hoveredLink = e.target.dataset.id;
     this.setState({
       hoveredLink: hoveredLink,
@@ -23,14 +23,14 @@ export default class MyStuff extends Component {
   }
 
     handleMouseLeave(e) {
-    console.log('detected mouse leave')
+    // console.log('detected mouse leave')
     this.setState({
       hoveredLink: '',
     });
   }
 
   render() {
-    console.log('state', this.state)
+    // console.log('state', this.state)
     return (
       <div className="MyStuff">
         <div className="icons">
