@@ -33,7 +33,7 @@ export default class MyStuff extends Component {
     // console.log('state', this.state)
     return (
       <div className="MyStuff">
-        <div className="icons">
+        <div className="icons fade-in three">
           <a href="https://github.com/stevencharleshuang/"
             target="_blank" rel="noopener noreferrer">
             <img src={Git} alt="Git Hub Link"
@@ -55,7 +55,7 @@ export default class MyStuff extends Component {
               onMouseLeave={this.handleMouseLeave} />
           </a>
         </div>
-        <div className="icon-id">
+        <div className="icon-id fade-in one">
           <span>myLinks{this.state.hoveredLink}</span>
         </div>
       </div>
