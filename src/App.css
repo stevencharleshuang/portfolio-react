@@ -10,23 +10,16 @@
 
 html {
   background-color: #222;
-  height: 100%;
   margin: 0;
 }
 
-body {
-  height: 100%;
-}
-
-#root {
-  height: 100%;
+html, body, .App, .App > div {
+  min-height: 100vh;
 }
 
 .App {
   margin: 0;
-  padding-bottom: 5%;
   background-color: #fff;
-  height: 100%;
   text-align: center;
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -152,7 +145,7 @@ a:hover, a:active {
   margin: 0 auto;
   padding-bottom: 10%;
   width: 80%;
-
+  height: 100%;
 }
 
 /***** Home Styles *****/
