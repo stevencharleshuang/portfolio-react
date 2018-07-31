@@ -8,7 +8,21 @@
   font-family: 'Source Sans Pro', sans-serif;
 */
 
+html {
+  background-color: #222;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  height: 100%;
+}
+
 .App {
+  margin: 0;
+  padding-bottom: 5%;
+  background-color: #fff;
+  height: 100%;
   text-align: center;
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -132,6 +146,7 @@ a:hover, a:active {
 
 .App main {
   margin: 0 auto;
+  padding-bottom: 10%;
   width: 80%;
 
 }
@@ -144,6 +159,10 @@ a:hover, a:active {
   flex-flow: row nowrap;
   justify-content: space-around;
   align-items: center;
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */
 }
 
 .App main .home img {
@@ -392,4 +411,18 @@ https://codepen.io/jmelgoza/pen/jEaGYg?editors=0110
 .App main .Contact button:hover {
   background-color: #0070E2;
   color: white;
+}
+
+/***** Footer Styles *****/
+
+.App footer {
+  margin: 0;
+  width: 100%;
+  height: 5%;
+  position: fixed;
+  bottom: 0;
+  background-color: #222;
+  color: white;
+  display: flex;
+  justify-content: space-between;
 }
