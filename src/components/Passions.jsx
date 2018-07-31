@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-const passions = ['web development', 'music', 'skateboarding'];
 
 export default class Passions extends Component {
   constructor(props) {

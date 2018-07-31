@@ -1,5 +1,4 @@
 import React from 'react';
-import MyPic from '../images/mypic.png';
 
 export default function () {
   return (
