@@ -6,6 +6,7 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Banner from './components/Banner';
+import Footer from './components/Footer';
 import "react-awesome-popover/dest/react-awesome-popover.css";
 import './App.css';
 
@@ -25,6 +26,7 @@ class App extends Component {
             <Route exact path="/contact" component={Contact} />
           </Switch>
         </main>
+        <Footer />
       </div>
     );
   }
