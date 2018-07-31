@@ -18,6 +18,10 @@ body {
   height: 100%;
 }
 
+#root {
+  height: 100%;
+}
+
 .App {
   margin: 0;
   padding-bottom: 5%;
@@ -425,4 +429,12 @@ https://codepen.io/jmelgoza/pen/jEaGYg?editors=0110
   color: white;
   display: flex;
   justify-content: space-between;
+}
+
+.App footer span {
+  padding: 1%;
+}
+
+.App footer a:hover, a:active {
+  color: #0070E2;
 }

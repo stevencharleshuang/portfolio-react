@@ -9,6 +9,11 @@ export default function () {
           Repo
         </a>
       </span>
+
+      <span>
+        Live • Learn • Love
+      </span>
+
       <span>
       ® 2018
       </span>
