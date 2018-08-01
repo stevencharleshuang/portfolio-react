@@ -5,7 +5,7 @@ import Splash from '../images/splash-03.png';
 
 export default function () {
   return (
-    <div className="home">
+    <div className="home fade-in two">
       <img src={Splash} alt="splash" />
       <Passions />
       {/*
