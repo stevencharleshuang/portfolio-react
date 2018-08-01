@@ -201,7 +201,7 @@ a:hover, a:active {
 
 .App main .Projects h2 {
   /*color: #0070E2;*/
-  font-size: 2em;
+  font-size: 2.4em;
 }
 
 .App main .Projects ul {
@@ -427,33 +427,177 @@ https://codepen.io/jmelgoza/pen/jEaGYg?editors=0110
   }
 
   .App main .Projects .ProjectsGallery ul li {
-    font-size: 2em;
+    font-size: 1em;
   }
 }
 
 /* Medium Devices, Desktops */
 @media screen and (max-width: 992px) {
   /***** Projects Styles *****/
+
   .App main {
     background-color: blue;
   }
 
-
   .App main .Projects .ProjectsGallery ul li {
-    font-size: 2em;
+    font-size: 1em;
   }
 
 }
 
 /* Small Devices, Tablets */
 @media screen and (max-width : 768px) {
+  .App nav li {
+    font-size: 1.8em;
+  }
+
   .App main {
     background-color: red;
   }
 
-  .App main .Projects .ProjectsGallery ul li {
+  /***** Home Styles *****/
+
+  .App main .home {
+    margin: 10% auto;
+  }
+
+  .App main .home img {
+    width: 65%;
+    height: 65%;
+  }
+
+  .App main .home .passions {
     font-size: 2em;
   }
+
+  /***** About Styles *****/
+
+  .App main .About {
+    margin: 10% auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .App main .About img {
+    margin: 2em auto;
+    width: 30%;
+    height: 30%;
+    flex-basis: 30%;
+  }
+
+  .App main .About .AboutMe {
+    flex-basis: 50%;
+  }
+
+  .App main .About .AboutMe p {
+    font-size: 1.8em;
+  }
+
+  /***** Projects Styles *****/
+
+  .App main .Projects h2 {
+    /*color: #0070E2;*/
+    font-size: 2em;
+  }
+
+  .App main .Projects ul {
+    padding: 0;
+  }
+
+  .App main .Projects li {
+    margin: 2em;
+    padding: 2em;
+    width: 60%;
+    height: 60%;
+  }
+
+  .App main .Projects li img {
+    width: 100%;
+    height: auto;
+  }
+
+
+  /*** Individual Project Styles ***/
+
+  .App main .Projects .project {
+    width: 90%;
+  }
+
+  .App main .Projects .project .show-gallery-btn {
+    width: 2em;
+    height: 2em;
+    padding: 0.2em;
+    color: #0070E2;
+    font-size: 2em;
+    font-weight: 600;
+  }
+
+  .App main .Projects .web-project {
+    padding: 1em;
+    display: flex;
+    flex-flow: column;
+  }
+
+  .App main .Projects .project-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .App main .Projects .web-project .web-project-info {
+    padding: 2%;
+    font-size: 1.8em;
+  }
+
+  .App main .Projects .web-project .web-project-info .icon {
+    width: 10%;
+    height: auto;
+    margin: 0 10% 0 0;
+    height: auto;
+  }
+
+  /***** Contact Styles *****/
+
+  .App main .Contact {
+    margin: 10% auto;
+    font-size: 2em;
+  }
+
+  .App main .Contact .contact-form {
+    margin: 3% auto;
+    padding: 3%;
+    width: 80%;
+  }
+
+  .App main .Contact input {
+    width: 70%;
+    font-size: 1em;
+    height: auto;
+  }
+
+  .App main .Contact textarea {
+    width: 70%;
+    font-size: 1em;
+    height: auto;
+  }
+
+  .App main .Contact button {
+    width: 30%;
+    height: auto;
+    padding: 1em;
+    font-size: 0.8em;
+  }
+
+  /***** Footer Styles *****/
+
+  .App footer {
+    position: fixed;
+    font-size: 2em;
+  }
+
+  .App footer span {
+    padding: 1%;
+  }
+
 }
 
 /* Extra Small Devices, Phones */
