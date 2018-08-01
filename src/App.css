@@ -814,4 +814,204 @@ https://codepen.io/jmelgoza/pen/jEaGYg?editors=0110
   .App main {
     background-color: orange;
   }
+
+    /***** Header Styles *****/
+
+  .App header .Banner {
+    display: flex;
+    flex-flow: column nowrap;
+    font-size: 1em;
+  }
+
+  .App header .Banner h1 {
+    margin-top: 0.5em;
+  }
+
+  .App header .Banner h2 {
+    margin-top: 0;
+    font-size: 2em;
+  }
+
+  .App header .Banner .MyStuff {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  .App header .Banner .MyStuff img {
+    margin: 0 10%;
+    width: 10%;
+    height: auto;
+  }
+
+  .App header .Banner .MyStuff .icon-id {
+    visibility: hidden;
+  }
+
+  /***** Nav Styles *****/
+
+  .App nav li {
+    margin: 0 3%;
+    display: inline-block;
+    padding: 0 0.1%;
+    width: auto;
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+
+  .App nav li:hover {
+    width: auto;
+    padding: 0.5em;
+  }
+
+  /***** Home Styles *****/
+
+  .App main {
+    width: 90%;
+  }
+
+  .App main .home {
+    /*border: 1px red solid;*/
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .App main .home img {
+    align-self: flex-start;
+    width: 80%;
+    height: 80%;
+  }
+
+  .App main .home .passions {
+    align-self: flex-end;
+    width: 70%;
+    height: 50%;
+    font-size: 2em;
+  }
+
+  /***** About Styles *****/
+
+  .App main .About {
+    margin: 10% auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .App main .About img {
+    margin: 2em auto;
+    width: 40%;
+    height: 40%;
+    flex-basis: 30%;
+  }
+
+  .App main .About .AboutMe {
+    flex-basis: 50%;
+  }
+
+  .App main .About .AboutMe p {
+    font-size: 1.6em;
+  }
+
+  /***** Projects Styles *****/
+
+  .App main .Projects {
+
+  }
+
+  .App main .Projects h2 {
+    /*color: #0070E2;*/
+    font-size: 2em;
+  }
+
+  .App main .Projects li {
+    margin: 1em;
+    padding: 0.5em;
+    width: 85%;
+    height: 85%;
+  }
+
+
+  /*** Individual Project Styles ***/
+
+  .App main .Projects .project {
+    width: 90%;
+  }
+
+  .App main .Projects .project .show-gallery-btn {
+    width: 2em;
+    height: 2em;
+    padding: 0.2em;
+    color: #0070E2;
+    font-size: 2em;
+    font-weight: 600;
+  }
+
+  .App main .Projects .web-project {
+    padding: 1em;
+    display: flex;
+    flex-flow: column;
+  }
+
+  .App main .Projects .project-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .App main .Projects .web-project .web-project-info {
+    padding: 2%;
+    font-size: 1.6em;
+  }
+
+  .App main .Projects .web-project .web-project-info .icon {
+    width: 13%;
+    height: auto;
+    margin: 0 13% 0 0;
+    height: auto;
+  }
+
+  /***** Contact Styles *****/
+
+  .App main .Contact {
+    margin: 10% auto;
+    font-size: 1.8em;
+  }
+
+  .App main .Contact .contact-form {
+    margin: 3% auto;
+    padding: 3%;
+    width: 80%;
+  }
+
+  .App main .Contact input {
+    width: 70%;
+    font-size: 0.6em;
+    height: auto;
+  }
+
+  .App main .Contact textarea {
+    width: 70%;
+    font-size: 0.8em;
+    height: auto;
+  }
+
+  .App main .Contact button {
+    width: 30%;
+    height: auto;
+    padding: 1em;
+    font-size: 0.8em;
+  }
+
+  /***** Footer Styles *****/
+
+  .App footer {
+    position: fixed;
+    font-size: 1.4em;
+  }
+
+  .App footer span {
+    padding: 1%;
+  }
 }
