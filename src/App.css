@@ -821,22 +821,22 @@ https://codepen.io/jmelgoza/pen/jEaGYg?editors=0110
   .App main .home {
     /*border: 1px red solid;*/
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column-reverse nowrap;
     justify-content: space-around;
     align-items: center;
   }
 
   .App main .home img {
     align-self: flex-start;
-    width: 70%;
-    height: 70%;
+    width: 80%;
+    height: 80%;
     border-radius: 10px;
     opacity: 0.9;
   }
 
   .App main .home .passions {
     align-self: flex-end;
-    width: 60%;
+    width: 70%;
     height: 50%;
     font-size: 2em;
   }
