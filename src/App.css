@@ -645,7 +645,7 @@ https://codepen.io/jmelgoza/pen/jEaGYg?editors=0110
   .App nav li {
 /*    margin: 0 5%;*/
     display: inline-block;
-/*    padding: 1.5% 1%;*/
+    padding: 0 0.6%;
     width: auto;
     font-size: 1.5em;
     font-weight: 500;
