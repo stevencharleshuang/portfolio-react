@@ -423,7 +423,7 @@ https://codepen.io/jmelgoza/pen/jEaGYg?editors=0110
 /* Large Devices, Wide Screens */
 @media screen and (max-width : 1200px) {
   .App main {
-    background-color: green;
+    /*background-color: green;*/
   }
 
   .App main .Projects .ProjectsGallery ul li {
@@ -444,7 +444,7 @@ https://codepen.io/jmelgoza/pen/jEaGYg?editors=0110
   /***** Projects Styles *****/
 
   .App main {
-    background-color: blue;
+    /*background-color: blue;*/
   }
 
   /***** Header Styles *****/
@@ -608,7 +608,7 @@ https://codepen.io/jmelgoza/pen/jEaGYg?editors=0110
   }
 
   .App main {
-    background-color: red;
+    /*background-color: red;*/
   }
 
   /***** Home Styles *****/
@@ -759,7 +759,7 @@ https://codepen.io/jmelgoza/pen/jEaGYg?editors=0110
 /* Extra Small Devices, Phones */
 @media screen and (max-width : 480px) {
   .App main {
-    background-color: yellow;
+    /*background-color: yellow;*/
   }
 
   /***** Header Styles *****/
@@ -968,7 +968,7 @@ https://codepen.io/jmelgoza/pen/jEaGYg?editors=0110
 /* Custom, iPhone Retina */
 @media screen and (max-width : 320px) {
   .App main {
-    background-color: orange;
+    /*background-color: orange;*/
   }
 
     /***** Header Styles *****/
