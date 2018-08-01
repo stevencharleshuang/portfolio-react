@@ -17,6 +17,10 @@ html, body, .App, .App > div {
   min-height: 100vh;
 }
 
+body {
+  font-size: 62.5%;
+}
+
 .App {
   margin: 0;
   background-color: #fff;
@@ -197,7 +201,7 @@ a:hover, a:active {
 
 .App main .Projects h2 {
   /*color: #0070E2;*/
-  font-size: 1.5vw;
+  font-size: 2em;
 }
 
 .App main .Projects ul {
@@ -231,7 +235,7 @@ a:hover, a:active {
 
 .App main .Projects .project {
   margin: 0 auto;
-  max-width: 75%;
+  width: 75%;
 }
 
 .App main .Projects .project .show-gallery-btn {
@@ -414,4 +418,54 @@ https://codepen.io/jmelgoza/pen/jEaGYg?editors=0110
 
 .App footer a:hover, a:active {
   color: #0070E2;
+}
+
+/* Large Devices, Wide Screens */
+@media screen and (max-width : 1200px) {
+  .App main {
+    background-color: green;
+  }
+
+  .App main .Projects .ProjectsGallery ul li {
+    font-size: 2em;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media screen and (max-width: 992px) {
+  /***** Projects Styles *****/
+  .App main {
+    background-color: blue;
+  }
+
+
+  .App main .Projects .ProjectsGallery ul li {
+    font-size: 2em;
+  }
+
+}
+
+/* Small Devices, Tablets */
+@media screen and (max-width : 768px) {
+  .App main {
+    background-color: red;
+  }
+
+  .App main .Projects .ProjectsGallery ul li {
+    font-size: 2em;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media screen and (max-width : 480px) {
+  .App main {
+    background-color: yellow;
+  }
+}
+
+/* Custom, iPhone Retina */
+@media screen and (max-width : 320px) {
+  .App main {
+    background-color: orange;
+  }
 }
