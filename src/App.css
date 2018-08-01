@@ -146,11 +146,19 @@ a:hover, a:active {
 }
 
 .App main .home .passions {
-
   width: 50%;
   height: 50%;
   font-size: 2vw;
   color: black;
+  text-align: left;
+}
+
+.App main .home .passions #text-passions {
+  color: #4169E1;
+}
+
+.App main .home .passions #text-passion {
+  color: #FF7F50;
 }
 
 /***** About Styles *****/
