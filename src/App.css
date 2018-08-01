@@ -50,7 +50,7 @@ a:hover, a:active {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  font-size: 2vw;
+  font-size: 2em;
   margin: 0 1% 0 1%;
   padding-bottom: 0;
   /* https://css-tricks.com/almanac/properties/u/user-select/ */
@@ -107,7 +107,7 @@ a:hover, a:active {
   height: 1.5%;
  /* border: 2px #0070E2 solid;
   border-radius: 5px;*/
-  font-size: 1.7vw;
+  font-size: 1.8em;
   font-weight: 600;
 }
 
@@ -190,7 +190,7 @@ a:hover, a:active {
 
 .App main .About .AboutMe p {
   font-family: 'Domine', serif;
-  font-size: 1.5vw;
+  font-size: 1.8em;
 }
 
 /***** Projects Styles *****/
@@ -243,11 +243,10 @@ a:hover, a:active {
   -moz-user-select: none;     /* Firefox all */
   -ms-user-select: none;      /* IE 10+ */
   user-select: none;          /* Likely future */
-  width: 4%;
-  height: 2%;
-  padding: 0.5%;
+  width: 2em;
+  height: 2em;
   color: #0070E2;
-  font-size: 1.8vw;
+  font-size: 2em;
   font-weight: 600;
   border: 2px #0070E2 solid;
   border-radius: 5px;
@@ -265,7 +264,8 @@ a:hover, a:active {
   border: 2px #0070E2 solid;
   border-radius: 5px;
   display: flex;
-  flex-flow: row;
+  flex-flow: row nowrap;
+  align-items: center;
 }
 
 .App main .Projects .project-image {
@@ -275,7 +275,7 @@ a:hover, a:active {
 
 .App main .Projects .web-project .web-project-info {
   padding: 2%;
-  font-size: 130%;
+  font-size: 1.6em;
   font-family: 'Domine', serif;
   font-weight: 100;
   color: black;
@@ -408,10 +408,12 @@ https://codepen.io/jmelgoza/pen/jEaGYg?editors=0110
   color: white;
   display: flex;
   justify-content: space-between;
+  font-size: 2em;
 }
 
 .App footer span {
-  padding: 1%;
+  margin: 0.5em auto;
+  width: auto;
 }
 
 .App footer a:hover, a:active {
@@ -427,6 +429,14 @@ https://codepen.io/jmelgoza/pen/jEaGYg?editors=0110
   .App main .Projects .ProjectsGallery ul li {
     font-size: 1em;
   }
+
+  /*** Individual Project Styles ***/
+
+  .App main .Projects .project {
+    margin: 0 auto;
+    width: 85%;
+  }
+
 }
 
 /* Medium Devices, Desktops */
@@ -479,7 +489,7 @@ https://codepen.io/jmelgoza/pen/jEaGYg?editors=0110
   .App main .home .passions {
     width: 60%;
     height: 50%;
-    font-size: 2em;
+    font-size: 1.6em;
   }
 
   /***** About Styles *****/
