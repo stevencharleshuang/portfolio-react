@@ -19,7 +19,7 @@ export default class Projects extends Component {
   }
 
   handleClick(e) {
-    console.log('handleClick! e: ', e.target);
+    // console.log('handleClick! e: ', e.target);
     switch (e.target.dataset.id) {
       case 'SteveFighter':
         this.setState((prevState) => ({
