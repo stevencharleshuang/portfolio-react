@@ -243,8 +243,8 @@ a:hover, a:active {
   -moz-user-select: none;     /* Firefox all */
   -ms-user-select: none;      /* IE 10+ */
   user-select: none;          /* Likely future */
-  width: 2em;
-  height: 2em;
+  width: 2rem;
+  height: 2rem;
   color: #0070E2;
   font-size: 2em;
   font-weight: 600;
@@ -357,7 +357,12 @@ https://codepen.io/jmelgoza/pen/jEaGYg?editors=0110
 
 .App main .Contact {
   text-align: center;
-  font-size: 1.5vw;
+  font-size: 1.2rem;
+}
+
+.App main .Contact a {
+  padding: 0 0.5rem;
+  color: #0070E2;
 }
 
 .App main .Contact .contact-form {
@@ -371,13 +376,13 @@ https://codepen.io/jmelgoza/pen/jEaGYg?editors=0110
 
 .App main .Contact input {
   width: 70%;
-  font-size: 1.3vw;
+  font-size: 1.2rem;
   height: auto;
 }
 
 .App main .Contact textarea {
   width: 70%;
-  font-size: 1.3vw;
+  font-size: 1.2rem;
   height: auto;
 }
 
@@ -387,7 +392,7 @@ https://codepen.io/jmelgoza/pen/jEaGYg?editors=0110
   background-color: rgba(0, 0, 0, 0);
   color: white;
   padding: 1% 5%;
-  font-size: 1.5vw;
+  font-size: 1.2rem;
   border: 2px #0070E2 solid;
 }
 
@@ -525,8 +530,8 @@ https://codepen.io/jmelgoza/pen/jEaGYg?editors=0110
   }
 
   .App main .Projects .project .show-gallery-btn {
-    width: 2em;
-    height: 2em;
+    width: 2rem;
+    height: 2rem;
     padding: 0.2em;
     color: #0070E2;
     font-size: 2em;
@@ -680,8 +685,8 @@ https://codepen.io/jmelgoza/pen/jEaGYg?editors=0110
   }
 
   .App main .Projects .project .show-gallery-btn {
-    width: 2em;
-    height: 2em;
+    width: 2rem;
+    height: 2rem;
     padding: 0.2em;
     color: #0070E2;
     font-size: 2em;
@@ -890,8 +895,8 @@ https://codepen.io/jmelgoza/pen/jEaGYg?editors=0110
   }
 
   .App main .Projects .project .show-gallery-btn {
-    width: 2em;
-    height: 2em;
+    width: 2rem;
+    height: 2rem;
     padding: 0.2em;
     color: #0070E2;
     font-size: 2em;
@@ -1097,8 +1102,8 @@ https://codepen.io/jmelgoza/pen/jEaGYg?editors=0110
   }
 
   .App main .Projects .project .show-gallery-btn {
-    width: 2em;
-    height: 2em;
+    width: 2rem;
+    height: 2rem;
     padding: 0.2em;
     color: #0070E2;
     font-size: 2em;

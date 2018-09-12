@@ -40,7 +40,7 @@ export default class ContactForm extends React.Component {
       return (
         <div className="Contact fade-in one">
           <section>
-          E-mail me at <a href="mailto:steven.charles.huang@gmail.com">steven.charles.huang@gmail.com</a>
+            E-mail me at <a href="mailto:steven.charles.huang@gmail.com">steven.charles.huang@gmail.com</a>
           </section>
           <p>- or -</p>
           Leave a note
@@ -72,6 +72,18 @@ export default class ContactForm extends React.Component {
               </p>
             </form>
           </section>
+          <section>
+              Find me on
+              <a href="https://www.hackerrank.com/stevencharles" target="_blank" rel="noopener noreferrer">
+                HackerRank
+              </a>
+                or check out my
+              <a href="https://repl.it/@stevencharleshu/" target="_blank" rel="noopener noreferrer">
+                Repls
+              </a>
+              !
+          </section>
+
         </div>
       );
     }

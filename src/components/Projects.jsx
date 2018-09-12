@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import SteveFighter from './projects/SteveFighter';
 import IveBin from './projects/IveBin';
-import SearchWoo from './projects/SearchWoo';
+import IveBin2 from './projects/IveBin2';
 import TicTacToe from './projects/TicTacToe';
 import ProjectsGallery from './ProjectsGallery';
 
@@ -12,7 +12,7 @@ export default class Projects extends Component {
       gallery: true,
       SteveFighter: false,
       IveBin: false,
-      SearchWoo: false,
+      IveBin2: false,
       TicTacToe: false,
     }
     this.handleClick = this.handleClick.bind(this);
@@ -26,7 +26,7 @@ export default class Projects extends Component {
           gallery: !prevState.gallery,
           SteveFighter: !prevState.SteveFighter,
           IveBin: false,
-          SearchWoo: false,
+          IveBin2: false,
           TicTacToe: false,
         }));
         break;
@@ -35,16 +35,16 @@ export default class Projects extends Component {
           gallery: !prevState.gallery,
           SteveFighter: false,
           IveBin: !prevState.IveBin,
-          SearchWoo: false,
+          IveBin2: false,
           TicTacToe: false,
         }));
         break;
-      case 'SearchWoo':
+      case 'IveBin2':
         this.setState((prevState) => ({
           gallery: !prevState.gallery,
           SteveFighter: false,
           IveBin: false,
-          SearchWoo: !prevState.SearchWoo,
+          IveBin2: !prevState.IveBin2,
           TicTacToe: false,
         }));
         break;
@@ -53,7 +53,7 @@ export default class Projects extends Component {
           gallery: !prevState.gallery,
           SteveFighter: false,
           IveBin: false,
-          SearchWoo: false,
+          IveBin2: false,
           TicTacToe: !prevState.TicTacToe,
         }));
         break;
@@ -62,7 +62,7 @@ export default class Projects extends Component {
           gallery: prevState.gallery,
           SteveFighter: false,
           IveBin: false,
-          SearchWoo: false,
+          IveBin2: false,
           TicTacToe: false,
         }));
         break;
@@ -79,7 +79,7 @@ export default class Projects extends Component {
             <div className="ProjectDisplay fade-in one">
               {(this.state.SteveFighter === true) ? <SteveFighter test='Steve Fighter' handleClick={this.handleClick} /> : null}
               {(this.state.IveBin === true) ? <IveBin handleClick={this.handleClick} /> : null}
-              {(this.state.SearchWoo === true) ? <SearchWoo handleClick={this.handleClick} /> : null}
+              {(this.state.IveBin2 === true) ? <IveBin2 handleClick={this.handleClick} /> : null}
               {(this.state.TicTacToe === true) ? <TicTacToe handleClick={this.handleClick} /> : null}
             </div>}
       </div>
