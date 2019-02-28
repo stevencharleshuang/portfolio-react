@@ -2,7 +2,7 @@ import React from 'react';
 import SteveFighterThmb from '../images/steve-fighter.png';
 import IveBinThmb from '../images/ivebin.png';
 import IveBin2 from '../images/ivebin2.png';
-import TicTacToeThmb from '../images/tictactoe.png';
+import MisterKatThmb from '../images/misterkat.png';
 
 export default function (props) {
   return (
@@ -24,9 +24,9 @@ export default function (props) {
           <img src={IveBin2} data-id="IveBin2" onClick={props.handleClick} alt="ivebin 2"/>
         </li>
         <li className="fade-in four">
-          <h2>Tic Tac Toe</h2>
+          <h2>MisterKat</h2>
           <br />
-          <img src={TicTacToeThmb} data-id="TicTacToe" onClick={props.handleClick} alt="tic tac toe"/>
+          <img src={MisterKatThmb} data-id="MisterKat" onClick={props.handleClick} alt="mister kat"/>
         </li>
       </ul>
     </div>

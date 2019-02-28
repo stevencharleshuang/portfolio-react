@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import SteveFighter from './projects/SteveFighter';
 import IveBin from './projects/IveBin';
 import IveBin2 from './projects/IveBin2';
-import TicTacToe from './projects/TicTacToe';
+import MisterKat from './projects/MisterKat';
 import ProjectsGallery from './ProjectsGallery';
 
 export default class Projects extends Component {
@@ -14,6 +14,7 @@ export default class Projects extends Component {
       IveBin: false,
       IveBin2: false,
       TicTacToe: false,
+      MisterKat: false,
     }
     this.handleClick = this.handleClick.bind(this);
   }
@@ -48,13 +49,13 @@ export default class Projects extends Component {
           TicTacToe: false,
         }));
         break;
-      case 'TicTacToe':
+      case 'MisterKat':
         this.setState((prevState) => ({
           gallery: !prevState.gallery,
           SteveFighter: false,
           IveBin: false,
           IveBin2: false,
-          TicTacToe: !prevState.TicTacToe,
+          MisterKat: !prevState.MisterKat,
         }));
         break;
       default:
@@ -80,7 +81,7 @@ export default class Projects extends Component {
               {(this.state.SteveFighter === true) ? <SteveFighter test='Steve Fighter' handleClick={this.handleClick} /> : null}
               {(this.state.IveBin === true) ? <IveBin handleClick={this.handleClick} /> : null}
               {(this.state.IveBin2 === true) ? <IveBin2 handleClick={this.handleClick} /> : null}
-              {(this.state.TicTacToe === true) ? <TicTacToe handleClick={this.handleClick} /> : null}
+              {(this.state.MisterKat === true) ? <MisterKat handleClick={this.handleClick} /> : null}
             </div>}
       </div>
     )
