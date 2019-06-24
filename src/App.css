@@ -761,6 +761,24 @@ https://codepen.io/jmelgoza/pen/jEaGYg?editors=0110
 
 }
 
+@media screen and (max-width : 650px) {
+  /***** Header Styles *****/
+  .App header .Banner {
+    display: flex;
+    flex-flow: column nowrap;
+    font-size: 1em;
+  }
+
+  .App header .Banner h1 {
+    margin: 0.5em auto;
+  }
+
+  .App header .Banner h2 {
+    margin: 0.5em auto;
+    font-size: 2em;
+  }
+}
+
 /* Extra Small Devices, Phones */
 @media screen and (max-width : 480px) {
   .App main {
