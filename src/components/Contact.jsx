@@ -45,7 +45,8 @@ export default class ContactForm extends React.Component {
           <p>- or -</p>
           Leave a note
           <section className="contact-form">
-            <form onSubmit={this.handleSubmit} data-netlify="true">
+            <form name="contact" onSubmit={this.handleSubmit} data-netlify="true">
+            <input type="hidden" name="form-name" value="contact" />
               <p>
                 <label>
                   Your Name:
