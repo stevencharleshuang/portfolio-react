@@ -45,7 +45,7 @@ export default class ContactForm extends React.Component {
           <p>- or -</p>
           Leave a note
           <section className="contact-form">
-            <form onSubmit={this.handleSubmit}>
+            <form onSubmit={this.handleSubmit} data-netlify="true">
               <p>
                 <label>
                   Your Name:

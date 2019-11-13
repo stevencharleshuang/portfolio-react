@@ -8,25 +8,25 @@ export default function (props) {
   return (
     <div className="ProjectsGallery">
       <ul>
-        <li className="fade-in one">
-          <h2>Steve Fighter</h2>
+        <li className="fade-in four">
+          <h2>MisterKat</h2>
           <br />
-          <img src={SteveFighterThmb} data-id="SteveFighter" onClick={props.handleClick} alt="steve fighter"/>
-        </li>
-        <li className="fade-in two">
-          <h2>IveBin</h2>
-          <br />
-          <img src={IveBinThmb} data-id="IveBin" onClick={props.handleClick} alt="ivebin"/>
+          <img src={MisterKatThmb} data-id="MisterKat" onClick={props.handleClick} alt="mister kat"/>
         </li>
         <li className="fade-in three">
           <h2>IveBin 2</h2>
           <br />
           <img src={IveBin2} data-id="IveBin2" onClick={props.handleClick} alt="ivebin 2"/>
         </li>
-        <li className="fade-in four">
-          <h2>MisterKat</h2>
+        <li className="fade-in two">
+          <h2>IveBin</h2>
           <br />
-          <img src={MisterKatThmb} data-id="MisterKat" onClick={props.handleClick} alt="mister kat"/>
+          <img src={IveBinThmb} data-id="IveBin" onClick={props.handleClick} alt="ivebin"/>
+        </li>
+        <li className="fade-in one">
+          <h2>Steve Fighter</h2>
+          <br />
+          <img src={SteveFighterThmb} data-id="SteveFighter" onClick={props.handleClick} alt="steve fighter"/>
         </li>
       </ul>
     </div>
