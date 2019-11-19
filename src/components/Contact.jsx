@@ -4,6 +4,7 @@ https://www.netlify.com/blog/2017/07/20/how-to-integrate-netlifys-form-handling-
 */
 
 import React from 'react';
+import { Redirect } from 'react-router-dom';
 
 const encode = (data) => {
   return Object.keys(data)
@@ -18,8 +19,24 @@ export default class ContactForm extends React.Component {
         name: "",
         email: "",
         message: "",
-        formSubmit: ""
+        formSubmit: "",
+        redirect: false
       };
+    }
+
+    setRedirect = () => {
+      this.setState({
+        redirect: true
+      })
+    }
+
+    renderRedirect = () => {
+      if (this.state.redirect) {
+        return <Redirect to={{
+          pathname: '/response',
+          state: { formSubmit: this.state.formSubmit }
+        }}/>
+      }
     }
 
     handleSubmit = (e) => {
@@ -28,8 +45,15 @@ export default class ContactForm extends React.Component {
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({ "form-name": "contact", ...this.state })
       })
-        .then(() => this.setState({ formSubmit: "success" }))
-        .catch(error => this.setState({ formSubmit: "fail" }));
+        .then(() => {
+          this.setState({ formSubmit: "success" });
+          this.setRedirect();
+        })
+        .catch(error => {
+          this.setState({ formSubmit: "fail" })
+          this.setRedirect();
+
+        });
 
       e.preventDefault();
     };
@@ -37,10 +61,10 @@ export default class ContactForm extends React.Component {
     handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
     render() {
-      console.log(this.state.formSubmit);
       const { name, email, message } = this.state;
       return (
         <div className="Contact fade-in one">
+        {this.renderRedirect()}
           <section>
             E-mail me at <a href="mailto:steven.charles.huang@gmail.com">steven.charles.huang@gmail.com</a>
           </section>

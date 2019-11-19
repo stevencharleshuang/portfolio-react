@@ -9,6 +9,7 @@ import Banner from './components/Banner';
 import Footer from './components/Footer';
 import "react-awesome-popover/dest/react-awesome-popover.css";
 import './App.css';
+import FormResponse from './components/FormResponse';
 
 class App extends Component {
   render() {
@@ -24,6 +25,7 @@ class App extends Component {
             <Route exact path="/about" component={About} />
             <Route exact path="/projects" component={Projects} />
             <Route exact path="/contact" component={Contact} />
+            <Route path="/response" component={FormResponse} />
           </Switch>
         </main>
         {/* <Footer /> */}

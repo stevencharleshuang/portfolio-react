@@ -412,6 +412,12 @@ https://codepen.io/jmelgoza/pen/jEaGYg?editors=0110
   color: white;
 }
 
+/***** Form Response Styles *****/
+.App main .form-response {
+  margin-top: 100px;
+  font-size: 1.2rem;
+}
+
 /***** Footer Styles *****/
 
 .App footer {
@@ -537,6 +543,7 @@ https://codepen.io/jmelgoza/pen/jEaGYg?editors=0110
   /*** Individual Project Styles ***/
 
   .App main .Projects .project {
+    margin: 0 auto;
     width: 90%;
   }
 
@@ -676,7 +683,12 @@ https://codepen.io/jmelgoza/pen/jEaGYg?editors=0110
     font-size: 2em;
   }
 
+  .App main .Projects .ProjectsGallery {
+  }
+  
   .App main .Projects ul {
+    margin: 0 auto;
+    width: 160%;
     padding: 0;
     /* grid-template-columns: 80%; */
     display: flex;
