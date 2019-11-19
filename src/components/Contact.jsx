@@ -17,7 +17,8 @@ export default class ContactForm extends React.Component {
       this.state = {
         name: "",
         email: "",
-        message: ""
+        message: "",
+        formSubmit: ""
       };
     }
 
@@ -27,8 +28,8 @@ export default class ContactForm extends React.Component {
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({ "form-name": "contact", ...this.state })
       })
-        .then(() => alert("Success!"))
-        .catch(error => alert(error));
+        .then(() => this.setState({ formSubmit: "success" }))
+        .catch(error => this.setState({ formSubmit: "fail" }));
 
       e.preventDefault();
     };
@@ -36,6 +37,7 @@ export default class ContactForm extends React.Component {
     handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
     render() {
+      console.log(this.state.formSubmit);
       const { name, email, message } = this.state;
       return (
         <div className="Contact fade-in one">
