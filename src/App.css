@@ -7,6 +7,9 @@
   font-family: 'Domine', serif;
   font-family: 'Source Sans Pro', sans-serif;
 */
+* {
+  box-sizing: border-box;
+}
 
 html {
   background-color: #222;
@@ -204,17 +207,25 @@ a:hover, a:active {
   font-size: 2.4em;
 }
 
+.App main .Projects {
+  display: flex;
+  justify-content: center;
+}
+
 .App main .Projects ul {
   padding: 0;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  justify-items: center;
 }
 
 .App main .Projects li {
-  margin: .5%;
-  display: inline-block;
   list-style: none;
   padding: 1%;
-  width: 40%;
-  height: 40%;
+  width: auto;
+  height: 100%;
   border: 2px #0070E2 solid;
   border-radius: 5px;
 }
@@ -656,6 +667,10 @@ https://codepen.io/jmelgoza/pen/jEaGYg?editors=0110
 
   /***** Projects Styles *****/
 
+  .App main .Projects .ProjectsGallery {
+    margin: 0 auto;
+  }
+
   .App main .Projects h2 {
     /*color: #0070E2;*/
     font-size: 2em;
@@ -663,13 +678,18 @@ https://codepen.io/jmelgoza/pen/jEaGYg?editors=0110
 
   .App main .Projects ul {
     padding: 0;
+    /* grid-template-columns: 80%; */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    
   }
 
   .App main .Projects li {
-    margin: 2em;
-    padding: 2em;
+    margin: 1em;
+    padding: 1em;
     width: 60%;
-    height: 60%;
+    height: auto;
   }
 
   .App main .Projects li img {
@@ -901,8 +921,8 @@ https://codepen.io/jmelgoza/pen/jEaGYg?editors=0110
   .App main .Projects li {
     margin: 2em;
     padding: 2em;
-    width: 80%;
-    height: 80%;
+    width: 10em;
+    height: 10em;
   }
 
 

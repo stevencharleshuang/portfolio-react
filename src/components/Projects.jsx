@@ -3,6 +3,7 @@ import SteveFighter from './projects/SteveFighter';
 import IveBin from './projects/IveBin';
 import IveBin2 from './projects/IveBin2';
 import MisterKat from './projects/MisterKat';
+import ReddClone from './projects/ReddClone';
 import ProjectsGallery from './ProjectsGallery';
 
 export default class Projects extends Component {
@@ -15,6 +16,7 @@ export default class Projects extends Component {
       IveBin2: false,
       TicTacToe: false,
       MisterKat: false,
+      ReddClone: false
     }
     this.handleClick = this.handleClick.bind(this);
   }
@@ -22,6 +24,16 @@ export default class Projects extends Component {
   handleClick(e) {
     // console.log('handleClick! e: ', e.target);
     switch (e.target.dataset.id) {
+      case 'ReddClone':
+        this.setState((prevState) => ({
+          gallery: !prevState.gallery,
+          SteveFighter: false,
+          IveBin: false,
+          IveBin2: false,
+          TicTacToe: false,
+          ReddClone: !prevState.ReddClone
+        }));
+        break;
       case 'SteveFighter':
         this.setState((prevState) => ({
           gallery: !prevState.gallery,
@@ -29,6 +41,7 @@ export default class Projects extends Component {
           IveBin: false,
           IveBin2: false,
           TicTacToe: false,
+          ReddClone: false
         }));
         break;
       case 'IveBin':
@@ -38,6 +51,7 @@ export default class Projects extends Component {
           IveBin: !prevState.IveBin,
           IveBin2: false,
           TicTacToe: false,
+          ReddClone: false
         }));
         break;
       case 'IveBin2':
@@ -47,6 +61,7 @@ export default class Projects extends Component {
           IveBin: false,
           IveBin2: !prevState.IveBin2,
           TicTacToe: false,
+          ReddClone: false
         }));
         break;
       case 'MisterKat':
@@ -56,6 +71,7 @@ export default class Projects extends Component {
           IveBin: false,
           IveBin2: false,
           MisterKat: !prevState.MisterKat,
+          ReddClone: false
         }));
         break;
       default:
@@ -65,6 +81,7 @@ export default class Projects extends Component {
           IveBin: false,
           IveBin2: false,
           TicTacToe: false,
+          ReddClone: false
         }));
         break;
     }
@@ -82,6 +99,7 @@ export default class Projects extends Component {
               {(this.state.IveBin === true) ? <IveBin handleClick={this.handleClick} /> : null}
               {(this.state.IveBin2 === true) ? <IveBin2 handleClick={this.handleClick} /> : null}
               {(this.state.MisterKat === true) ? <MisterKat handleClick={this.handleClick} /> : null}
+              {(this.state.ReddClone === true) ? <ReddClone handleClick={this.handleClick} /> : null}
             </div>}
       </div>
     )
