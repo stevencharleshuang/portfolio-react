@@ -119,9 +119,21 @@ a:hover, a:active {
 }
 
 .App nav li:hover {
-  background-color: #0070E2;
-  border-radius: 5px 5px 0 0;
+  /* background-color: #0070E2; */
+  /* border-radius: 5px 5px 0 0; */
   color: white;
+}
+
+.App nav li:hover::after {
+  color: #0070E2;
+  content: " >";
+  font-weight: 800;
+}
+
+.App nav li:hover::before {
+  color: #0070E2;
+  content: "< ";
+  font-weight: 800;
 }
 
 .App main {
