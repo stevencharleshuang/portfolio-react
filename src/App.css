@@ -550,7 +550,7 @@ https://codepen.io/jmelgoza/pen/jEaGYg?editors=0110
   .App main .Projects .project .show-gallery-btn {
     width: 2rem;
     height: 2rem;
-    padding: 0.2em;
+    /* padding: 0.2em; */
     color: #0070E2;
     font-size: 2em;
     font-weight: 600;
@@ -719,7 +719,7 @@ https://codepen.io/jmelgoza/pen/jEaGYg?editors=0110
   .App main .Projects .project .show-gallery-btn {
     width: 2rem;
     height: 2rem;
-    padding: 0.2em;
+    /* padding: 0.2em; */
     color: #0070E2;
     font-size: 2em;
     font-weight: 600;
@@ -812,7 +812,7 @@ https://codepen.io/jmelgoza/pen/jEaGYg?editors=0110
 }
 
 /* Extra Small Devices, Phones */
-@media screen and (max-width : 480px) {
+@media screen and (max-width : 528px) {
   .App main {
     /*background-color: yellow;*/
   }
@@ -933,8 +933,6 @@ https://codepen.io/jmelgoza/pen/jEaGYg?editors=0110
   .App main .Projects li {
     margin: 2em;
     padding: 2em;
-    width: 10em;
-    height: 10em;
   }
 
 
@@ -947,7 +945,7 @@ https://codepen.io/jmelgoza/pen/jEaGYg?editors=0110
   .App main .Projects .project .show-gallery-btn {
     width: 2rem;
     height: 2rem;
-    padding: 0.2em;
+    /* padding: 0.2em; */
     color: #0070E2;
     font-size: 2em;
     font-weight: 600;
@@ -1140,8 +1138,6 @@ https://codepen.io/jmelgoza/pen/jEaGYg?editors=0110
   .App main .Projects li {
     margin: 1em;
     padding: 0.5em;
-    width: 85%;
-    height: 85%;
   }
 
 
@@ -1154,7 +1150,7 @@ https://codepen.io/jmelgoza/pen/jEaGYg?editors=0110
   .App main .Projects .project .show-gallery-btn {
     width: 2rem;
     height: 2rem;
-    padding: 0.2em;
+    /* padding: 0.2em; */
     color: #0070E2;
     font-size: 2em;
     font-weight: 600;

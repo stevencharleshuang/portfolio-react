@@ -8,7 +8,7 @@ export default function (props) {
     <div className="project reddclone">
       <div className="show-gallery-btn" data-id="ReddClone" onClick={props.handleClick}> x </div>
       <div className="web-project">
-        <a href="https://peaceful-wright-2755e9.netlify.com/" target="_blank" rel="noopener noreferrer">
+        <a href="https://sleepy-mirzakhani-3858f5.netlify.com/index.html" target="_blank" rel="noopener noreferrer">
           <img className="project-image" src={ReddClone} alt="reddclone" />
         </a>
         <div className="web-project-info">
@@ -20,7 +20,7 @@ export default function (props) {
             <span>Tech</span>: HTML, CSS, Bulma, JavaScript, Java, Spring Boot, FlyWay, Hibernate, PostgreSQL, Docker, JSON Web Tokens, Eureka, Zuul, Open Feign
           </p>
           <p>
-            <a href="https://peaceful-wright-2755e9.netlify.com/" target="_blank" rel="noopener noreferrer">
+            <a href="https://sleepy-mirzakhani-3858f5.netlify.com/index.html" target="_blank" rel="noopener noreferrer">
               <img className="icon" src={Web} alt="web" />
             </a>
             <a href="https://github.com/ntuvera/spring-boot-microservices-reddit-api" target="_blank" rel="noopener noreferrer">
