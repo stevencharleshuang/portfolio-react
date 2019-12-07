@@ -4,6 +4,7 @@ import IveBinThmb from '../images/ivebin.png';
 import IveBin2 from '../images/ivebin2.png';
 import MisterKatThmb from '../images/misterkat.png';
 import ReddClone from '../images/redd-clone.png';
+import DanSchein from '../images/dan-schein.png';
 
 export default function (props) {
   return (
@@ -13,6 +14,11 @@ export default function (props) {
           <h2>Redd-Clone</h2>
           <br />
           <img src={ReddClone} data-id="ReddClone" onClick={props.handleClick} alt="redd clone"/>
+        </li>
+        <li className="fade-in four">
+          <h2>DanSchein.net</h2>
+          <br />
+          <img src={DanSchein} data-id="DanSchein" onClick={props.handleClick} alt="dan schein"/>
         </li>
         <li className="fade-in four">
           <h2>MisterKat</h2>

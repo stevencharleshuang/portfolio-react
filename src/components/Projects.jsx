@@ -4,6 +4,7 @@ import IveBin from './projects/IveBin';
 import IveBin2 from './projects/IveBin2';
 import MisterKat from './projects/MisterKat';
 import ReddClone from './projects/ReddClone';
+import DanSchein from './projects/DanSchein';
 import ProjectsGallery from './ProjectsGallery';
 
 export default class Projects extends Component {
@@ -14,8 +15,8 @@ export default class Projects extends Component {
       SteveFighter: false,
       IveBin: false,
       IveBin2: false,
-      TicTacToe: false,
       MisterKat: false,
+      DanSchein: false,
       ReddClone: false
     }
     this.handleClick = this.handleClick.bind(this);
@@ -30,7 +31,8 @@ export default class Projects extends Component {
           SteveFighter: false,
           IveBin: false,
           IveBin2: false,
-          TicTacToe: false,
+          MisterKat: false,
+          DanSchein: false,
           ReddClone: !prevState.ReddClone
         }));
         break;
@@ -40,7 +42,8 @@ export default class Projects extends Component {
           SteveFighter: !prevState.SteveFighter,
           IveBin: false,
           IveBin2: false,
-          TicTacToe: false,
+          MisterKat: false,
+          DanSchein: false,
           ReddClone: false
         }));
         break;
@@ -50,7 +53,8 @@ export default class Projects extends Component {
           SteveFighter: false,
           IveBin: !prevState.IveBin,
           IveBin2: false,
-          TicTacToe: false,
+          MisterKat: false,
+          DanSchein: false,
           ReddClone: false
         }));
         break;
@@ -60,7 +64,8 @@ export default class Projects extends Component {
           SteveFighter: false,
           IveBin: false,
           IveBin2: !prevState.IveBin2,
-          TicTacToe: false,
+          MisterKat: false,
+          DanSchein: false,
           ReddClone: false
         }));
         break;
@@ -71,6 +76,18 @@ export default class Projects extends Component {
           IveBin: false,
           IveBin2: false,
           MisterKat: !prevState.MisterKat,
+          DanSchein: false,
+          ReddClone: false
+        }));
+        break;
+      case 'DanSchein':
+        this.setState((prevState) => ({
+          gallery: !prevState.gallery,
+          SteveFighter: false,
+          IveBin: false,
+          IveBin2: false,
+          MisterKat: false,
+          DanSchein: !prevState.DanSchein,
           ReddClone: false
         }));
         break;
@@ -80,7 +97,8 @@ export default class Projects extends Component {
           SteveFighter: false,
           IveBin: false,
           IveBin2: false,
-          TicTacToe: false,
+          MisterKat: false,
+          DanSchein: false,
           ReddClone: false
         }));
         break;
@@ -99,6 +117,7 @@ export default class Projects extends Component {
               {(this.state.IveBin === true) ? <IveBin handleClick={this.handleClick} /> : null}
               {(this.state.IveBin2 === true) ? <IveBin2 handleClick={this.handleClick} /> : null}
               {(this.state.MisterKat === true) ? <MisterKat handleClick={this.handleClick} /> : null}
+              {(this.state.DanSchein === true) ? <DanSchein handleClick={this.handleClick} /> : null}
               {(this.state.ReddClone === true) ? <ReddClone handleClick={this.handleClick} /> : null}
             </div>}
       </div>
