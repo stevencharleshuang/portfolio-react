@@ -7,7 +7,6 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Banner from './components/Banner';
 // import Footer from './components/Footer';
-import 'react-awesome-popover/dest/react-awesome-popover.css';
 import './App.css';
 import FormResponse from './components/FormResponse';
 
