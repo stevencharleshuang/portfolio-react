@@ -68,7 +68,7 @@ export default class ContactForm extends React.Component {
           <section>
             E-mail me at <a href="mailto:steven.charles.huang@gmail.com">steven.charles.huang@gmail.com</a>
           </section>
-          <p>- or -</p>
+          {/* <p>- or -</p>
           Leave a note
           <section className="contact-form">
             <form name="contact" onSubmit={this.handleSubmit} data-netlify="true">
@@ -98,6 +98,14 @@ export default class ContactForm extends React.Component {
                 <button type="submit">Send</button>
               </p>
             </form>
+          </section> */}
+          <section>
+            <p>
+              Check out my <a href="https://www.github.com/stevencharleshuang" target="_blank" rel="noopener noreferrer">Git Hub</a>
+            </p>
+            <p>
+              Connect with me on <a href="https://www.linkedin.com/in/stevencharleshuang" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </p>
           </section>
           <section>
               Find me on

@@ -5,11 +5,17 @@ import IveBin2 from '../images/ivebin2.png';
 import MisterKatThmb from '../images/misterkat.png';
 import ReddClone from '../images/redd-clone.png';
 import DanSchein from '../images/dan-schein.png';
+import MaskTracker from '../images/mask-tracker.png'
 
 export default function (props) {
   return (
     <div className="ProjectsGallery">
       <ul>
+        <li className="fade-in four">
+          <h2>Mask Tracker</h2>
+          <br />
+          <img src={MaskTracker} data-id="MaskTracker" onClick={props.handleClick} alt="mask tracker"/>
+        </li>
         <li className="fade-in four">
           <h2>Redd-Clone</h2>
           <br />
