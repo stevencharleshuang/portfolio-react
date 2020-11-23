@@ -61,7 +61,7 @@ export default class ContactForm extends React.Component {
     handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
     render() {
-      const { name, email, message } = this.state;
+      // const { name, email, message } = this.state;
       return (
         <div className="Contact fade-in one">
         {this.renderRedirect()}
